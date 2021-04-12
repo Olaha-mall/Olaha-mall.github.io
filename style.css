@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 :root {
     --primaryColor: #0082C3;
     --accentColor: #f8f7f5;
     --textColor: #6b6f81;
-}
+} 
 
 * {
     padding: 0;
@@ -13,6 +14,7 @@
     list-style-type: none;
     box-sizing: border-box;
     font-family: 'Oxygen', sans-serif;
+        
 }
 
 .row::after {
@@ -243,6 +245,9 @@ nav li a {
     margin-top: 3.1rem;
 
 }
+
+
+
 .grid-container-3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -293,18 +298,21 @@ nav li a {
 
 .new-stores-section {
     padding-top: 3rem;
+    padding-bottom: 3.5rem;
     background-color: var(--accentColor);
 }
 
 .new-stores-section h2 {
+    font-family: 'Gochi Hand', cursive;
     text-align: right;
-    font-size: 3.5rem;
-    margin-top: 7rem;
+    font-size: 4rem;
+    margin-top: 8rem;
 
 }
 
 .new-stores-section p {
-    margin-top: 2rem;
+    font-family: 'Amatic SC', cursive;
+    margin-top: 2rem 1rem; 
     text-align: right;
     font-size: 1.5rem;
 }
@@ -315,12 +323,12 @@ nav li a {
 }
 
 .column-4 {
-    width: 33.33%;
+    width: 40%;
     float: left;
 }
 
 .column-8 {
-    width: 66.66%;
+    width: 60%;
     float: left;
 }
 
@@ -331,6 +339,8 @@ nav li a {
     border-radius: 10px;
     overflow: hidden;
     display: block;
+    -webkit-box-shadow: 0px 0px 10px -5px #000000; 
+    box-shadow: 0px 0px 10px -5px #000000;
 }
 
 .slides {
@@ -423,3 +433,22 @@ nav li a {
 #radio4:checked ~ .navigation-auto .auto-btn4 {
     background: #cdefff
 }
+
+.new-product-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #fff;
+}
+
+.new-product-section h2 {
+    font-size: 2.5rem;
+}
+
+.new-product-section span {
+    border-bottom: 3px solid var(--primaryColor);
+    padding-bottom: 0.4rem;
+}
+
+/* .new-product-content {
+    font-size: 1rem;
+} */
