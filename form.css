@@ -1,0 +1,165 @@
+/* MHuy register form css (dont touch) */
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],input[type=email],input[type=number],input[type=password],input[type=tel],input[type=file],input[type=file],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=reset] {
+    background-color: red;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=reset]:hover {
+    background-color: rgb(199, 28, 28);
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }     
+    input[type=reset] {
+        width: 100%;
+        margin-top: 0;
+    }     
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Inconsolata:wght@500&display=swap');
+:root {
+    --primaryColor: #0082C3;
+    --accentColor: #f8f7f5;
+    --textColor: #6b6f81;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.top-header,
+.bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.top-header {
+    background: var(--primaryColor);
+    color: #ffff;
+}
+
+.nav-icons ion-icon {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.nav-icons-2 ion-icon {
+    font-size: 4rem;
+}
+
+.bottom-header {
+    padding: 1rem 2rem;
+}
+
+.mall-brand {
+    display: flex;
+}
+
+.mall-brand img {
+    margin-right: .5rem;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav li a {
+    font-size: 1.3rem;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.main-page-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+}
+
+.test{
+    padding-left: 23rem;
+}

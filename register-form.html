@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Olaha Mall</title>
+    <link rel="stylesheet" href="form.css" />
+</head>
+
+<header>
+    <nav>
+        <div class="top-header">
+            <small>Products. <br> New Arrivals</small>
+
+            <div class="nav-icons">
+                <ion-icon name="search-outline"></ion-icon>
+                <ion-icon name="bag-handle-outline"></ion-icon>
+                <ion-icon name="person-outline"></ion-icon> 
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="mall-brand">
+                <img src="image/logo.png" width="180px" alt="">
+            </div>
+            <ul>
+                <li><a href="">Men's</a></li>
+                <li><a href="">Women's</a></li>
+                <li><a href="">Kid's</a></li> 
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+
+<body>
+    <div class="container">
+        <form action="/action_page.php">
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="email"><b>Email</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='email' placeholder="Email" name="Email" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Phone Number</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='tel' placeholder="Phone Number" name="Phone" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Password</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='password' placeholder="Password" name="Password" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Re-enter Password</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='password' placeholder="Re-enter Password" name="Re-enter password" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Profile picture</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='file' accept="image/x-png,image/jpeg" name="Profile picture" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>First Name</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='text' placeholder="First Name" name="First name" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Last Name</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='text' placeholder="Last Name" name="Last name" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Address</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='text' placeholder="Address" name="Address" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>City</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='text' placeholder="City" name="City" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Zipcode</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='number' placeholder="Zipcode" name="Zipcode" min="1000" max="999999" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Country</b></label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value=''>Please select</option>
+                        <option value='AU'>Australia</option>
+                        <option value='AT'>Austria</option>
+                        <option value='BR'>Brazil</option>
+                        <option value='KH'>Cambodia</option>
+                        <option value='CA'>Canada</option>
+                        <option value='Cx'>Christmas Island</option>
+                        <option value='CR'>Costa Rica</option>
+                        <option value='EG'>Egypt</option>
+                        <option value='FI'>Finland</option>
+                        <option value='FR'>France</option>
+                        <option value='DE'>Germany</option>
+                        <option value='JP'>Japan</option>
+                        <option value='MX'>Mexico</option>
+                        <option value='MA'>Morocco</option>
+                        <option value='NO'>Norway</option>
+                        <option value='RU'>Russian Federation</option>
+                        <option value='TR'>Terkey</option>
+                        <option value='GB'>United Kingdom</option>
+                        <option value='US'>United States</option>
+                        <option value='VN'>Viet nam</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Account type</b></label>
+                </div>
+                <div class="col-75">
+                    <select name='Account type'>
+                        <option value=''>Please Select</option>
+                        <option value='1'>Shopper</option>
+                        <option value='2'>Store owner</option>
+                    </select>
+                </div>
+            </div>
+            
+            
+            <label class="test"><h4>The following 3 fields only apply to a store owner account:</h4></label>
+            
+            
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Business name</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='text' placeholder="Business name" name="Business name" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Store name</b></label>
+                </div>
+                <div class="col-75">
+                    <input type='text' placeholder="Store name" name="Store name" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label><b>Store category</b></label>
+                </div>
+                <div class="col-75">
+                    <select id="Store category" name="Store category">
+                        <option value=''>Please select</option>
+                        <option value='AU'>Department stores</option>
+                        <option value='AT'>Grocery stores</option>
+                        <option value='BR'>Restaurants</option>
+                        <option value='KH'>Clothing stores</option>
+                        <option value='CA'>Accessory stores</option>
+                        <option value='Cx'>Pharmacies</option>
+                        <option value='CR'>Technology stores</option>
+                        <option value='EG'>Pet stores</option>
+                        <option value='FI'>Toy stores</option>
+                        <option value='FR'>Specialty stores</option>
+                        <option value='DE'>Thrift stores</option>
+                        <option value='JP'>Services</option>
+                        <option value='JP'>Kiosks</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Submit">
+                <input type="reset" value="reset">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</html>
