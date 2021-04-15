@@ -104,11 +104,7 @@ table {
   .test{
     padding-left: 23rem;
 }
-p{
-    text-align: center;
-    padding: 200px;
-    font-size: 100px;
-}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
