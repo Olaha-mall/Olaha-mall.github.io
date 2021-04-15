@@ -1,0 +1,176 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+  
+th, td {
+    text-align:left;
+    padding: 8px;
+    width: 800px;
+    
+}
+  
+tr:nth-child(even){background-color: #f2f2f2}
+td img {
+    width: 10%
+}
+
+td img{
+    width: 50%
+}
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+  
+button:hover {
+    background-color: #f44336;
+    color: white;
+}
+input[type=number]{
+    padding: 6px 18px;
+    font-size: 14px;
+}
+h1{
+    margin:12px
+}
+
+.submit-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+
+.small-button{
+    float: right;
+    padding-left: 12px;
+    padding-top: 13px;
+    background-color: #0082C3;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border:2px solid #0082C3
+    
+}
+.small-button:hover{
+    color: #0082C3;
+    background-color: white;
+}
+
+.small-button2{
+    float: left;
+    padding-left: 12px;
+    padding-top: 13px;
+    background-color: orange;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border:2px solid orange;
+    
+}
+.small-button2:hover{
+    background-color: white;
+    color: orange;
+}
+/*header*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+:root {
+    --primaryColor: #0082C3;
+    --accentColor: #f8f7f5;
+    --textColor: #6b6f81;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.top-header,
+.bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.top-header {
+    background: var(--primaryColor);
+    color: #ffff;
+}
+
+.nav-icons ion-icon {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.nav-icons-2 ion-icon {
+    font-size: 4rem;
+}
+
+.bottom-header {
+    padding: 1rem 2rem;
+}
+
+.mall-brand {
+    display: flex;
+}
+
+.mall-brand img {
+    margin-right: .5rem;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav li a {
+    font-size: 1.3rem;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.main-page-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+}
+
+.test{
+    padding-left: 23rem;
+}
