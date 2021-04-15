@@ -1,0 +1,31 @@
+.opening-hours-section {
+    padding: 3rem 0rem;
+    background-color: var(--accentColor);
+}
+
+.opening-hours-section span {
+    border-bottom: 3px solid var(--primaryColor);
+    padding-bottom: 0.4rem;
+}
+
+.flex-container-2 {
+    display: flex;
+    direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.opening-hours-content-wrapper{
+    margin-top: 2rem;
+}
+.opening-hours-content{
+    align-items: flex;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}
+
+.opening-hours-content h2 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
