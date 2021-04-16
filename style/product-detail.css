@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+:root {
+    --primaryColor: #0082C3;
+    --accentColor: #f8f7f5;
+    --textColor: #6b6f81;
+} 
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+        
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.top-header,
+.bottom-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.top-header {
+    background: var(--primaryColor);
+    color: #ffff;
+}
+
+.nav-icons ion-icon {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.nav-icons-2 ion-icon {
+    font-size: 4rem;
+}
+
+.bottom-header {
+    padding: 1rem 2rem;
+}
+
+.mall-brand {
+    display: flex;
+}
+
+.mall-brand img {
+    margin-right: .5rem;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav li a {
+    font-size: 1.3rem;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.product-detail-section {
+    padding-bottom: 2.5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.product-detail-section h2 {
+    font-size: 2.5rem;
+}
+.product-detail-section span {
+    border-bottom: 3px solid var(--primaryColor);
+    padding-bottom: 0.4rem;
+}
+
+.product-detail-content-wrapper {
+    margin-top: 3.5rem;
+}
+
+.clear_sep {
+    border-bottom: 2px solid #414141;
+    margin-bottom: 30px;
+}
+
+.product-detail-content img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 10px -5px #000000; 
+    box-shadow: 0px 0px 10px -5px #000000;
+}
+
+.product-detail-section h3 {
+    font-size: 1.5rem;
+    text-align: left;
+    font-style: bold;
+    margin-left: 2rem;
+}
+
+.product-detail-content h4 {
+    text-indent: 2rem 1rem;
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: -1.3rem;
+}
+
+.product-detail-content h5 {
+    text-indent: 2rem 1rem;
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: -1.3rem;
+}
+
+.product-detail-content p {
+    text-indent: 2rem 1rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: -1.3rem;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align:left;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 2rem;
+    }
+    
+button:hover {
+    background-color: #f44336;
+    color: white;
+}  
+       
+.icons ion-icon{
+    font-size: 36px;
+    display: flex;
+    margin-left: 2rem;
+}
+
+    
+    
+   
+
+
+
