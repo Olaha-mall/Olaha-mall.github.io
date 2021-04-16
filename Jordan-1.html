@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Olaha Mall</title>
   <link rel="stylesheet" href="style/mystyle.css">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 </head>
 
@@ -35,37 +36,71 @@
 
   </header>
   <main class="container">
-
-    <!-- Left Column / Headphones Image -->
-    <div class="left-column">
-      <img src="image/item/Jordan1.jpg" width="400rem" , height="400rem">
-
+    <div>
+      <img src="image/item/Jordan1.jpg" class="picture">
     </div>
 
-
-    <!-- Right Column -->
-    <div class="right-column">
-
-      <!-- Product Description -->
-      <div class="product-description">
+    <div class="description">
+      <div>
         <h1>Jordan 1 sneaker</h1>
         <p>The Air Jordan 1 Mid Shoe is inspired by the first Air Jordan 1, offering Jordan fans a chance to follow in
           the footsteps of greatness. Fresh color trims the clean, classic materials, adding some innovation into the
           familiar design.</p>
-
         <br>
         <p>Colour Shown: White/Black/Arctic Orange</p>
       </div>
-
-
-      <!-- Product Pricing -->
-      <div class="product-price">
-        <span>3.500.000₫</span>
-        <a href="#" class="cart-btn">Add to cart</a>
+      <div>
+        <span class="price">3.500.000₫</span>
+        <button type="button">Buy now</button>
+        <a href="shopping-cart.html" class="icons">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+        </a>
       </div>
     </div>
-  </main>
-  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <div class="Recommended-product">
+      <div class="section-header">
+        <div class="brand-content-section">
+          <div class="wrapper">
+            <h2><span class="text-main">Recommended Products </span></h2>
+            <div class="new-product-section-wrapper">
+              <div class="grid-container-4">
+                <div class="new-product-content">
+                  <img src="image/logo.png">
+                  <h4>Vi Coach</h4>
+                  <h5>1,500,000 VND</h5>
+                </div>
+                <div class="new-product-content">
+                  <img src="image/logo.png">
+                  <h4>Vi Coach</h4>
+                  <h5>1,500,000 VND</h5>
+                </div>
+                <div class="new-product-content">
+                  <img src="image/logo.png">
+                  <h4>Vi Coach</h4>
+                  <h5>1,500,000 VND</h5>
+                </div>
+                <div class="new-product-content">
+                  <img src="image/logo.png">
+                  <h4>Vi Coach</h4>
+                  <h5>1,500,000 VND</h5>
+                </div>
+                <div class="new-product-content">
+                  <img src="image/logo.png">
+                  <h4>Vi Coach</h4>
+                  <h5>1,500,000 VND</h5>
+                </div>
+                <div class="new-product-content">
+                  <img src="image/logo.png">
+                  <h4>Vi Coach</h4>
+                  <h5>1,500,000 VND</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 <footer>
   <div class="footer-container">
@@ -90,7 +125,7 @@
         <div class="navbar">
           <h4>Quick Links</h4>
           <ul class="footer-container-links">
-            <li><a href="">Contact Us</a></li>
+            <li><a href="contact-form.html">Contact Us</a></li>
             <li><a href="">Copyright</a></li>
             <li><a href="">Term of Service</a></li>
           </ul>
