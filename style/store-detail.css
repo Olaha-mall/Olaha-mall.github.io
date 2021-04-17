@@ -1,0 +1,146 @@
+.store-detail-banner-section {
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.store-detail-banner-section img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.store-detail-section {
+  padding: 2.5rem;
+  background-color: var(--accentColor);
+}
+
+.store-detail-section h2 {
+  font-size: 2.5rem;
+}
+
+.store-detail-section span {
+  border-bottom: 3px solid var(--primaryColor);
+  padding-bottom: 0.4rem;
+}
+
+.store-detail-content-wrapper {
+  margin-top: 3.5rem;
+}
+
+.store-detail-content img {
+  max-width: 100%;
+  height: auto;
+  width: 250px;
+  -webkit-box-shadow: 0px 0px 10px -5px #000000; 
+    box-shadow: 0px 0px 10px -5px #000000;
+}
+
+.store-detail-section h3 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.store-detail-content h4 {
+  font-size: 0.8rem;
+  text-align: justify;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-indent: 10px;
+}
+
+.store-detail-content h5 {
+  font-size: 0.8rem;
+  text-align: justify;
+  margin-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.store-detail-content p {
+  font-size: 0.8rem;
+  text-align: justify;
+  padding-bottom: 0.5rem;
+}
+
+
+.featured-product-section {
+  padding: 2.5rem;
+  background-color: var(--primaryColor);
+}
+
+.featured-product-section h2 {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.featured-product-section span {
+  border-bottom: 3px solid var(--accentColor);
+  padding-bottom: 0.4rem;
+}
+
+.featured-product-content-wrapper {
+  margin-top: 3.5rem;
+}
+
+
+.grid-container-5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2.2rem;
+  grid-row-gap: 2rem;
+}
+
+.featured-product-content {
+  position: relative;
+}
+
+.featured-product-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 10px -5px #000000; 
+  box-shadow: 0px 0px 10px -5px #000000; 
+}
+
+.featured-product-content h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 0.8rem;
+  font-style: bold;
+  color: #fff;
+}
+
+.featured-product-content h5 {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  padding-bottom: 0.5rem;
+  color: #fff;
+}
+
+.similar-store-section {
+  padding: 2.5rem;
+  background-color: var(--accentColor);
+}
+
+.similar-store-section h2 {
+  font-size: 2.5rem;
+}  
+     
+.similar-store-section span {
+  border-bottom: 3px solid var(--primaryColor);
+  padding-bottom: 0.4rem;
+}
+
+.similar-store-content-wrapper {
+  margin-top: 2.5rem;
+}
+    
+   
+
+
+
