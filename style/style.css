@@ -39,6 +39,10 @@
 .nav-icons ion-icon {
     font-size: 1.5rem;
     margin-left: 1rem;
+
+}
+.nav-icons a {
+    color: #fff;
 }
 
 .nav-icons-2 ion-icon {
@@ -567,6 +571,11 @@ nav li a:hover {
 
 .column-8 {
     width: 55%;
+    float: left;
+}
+
+.column-9 {
+    width: 100%;
     float: left;
 }
 
