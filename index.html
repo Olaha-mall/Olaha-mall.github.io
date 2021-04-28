@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Olaha Mall</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <script src="app.js"></script>
         <nav>
             <div class="top-header">
-                <small>Olaha<br>Mall</small>
+                <small>Products. <br> New Arrivals</small>
+
                 <div class="nav-icons">
-                    <a href="shopping-cart.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-                    <a href="log-in.html"><ion-icon name="person-outline"></ion-icon></a> 
+                    <ion-icon name="search-outline"></ion-icon>
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+                    <ion-icon name="person-outline"></ion-icon> 
                 </div>
             </div>
             <div class="bottom-header">
                 <div class="mall-brand">
-                    <a href="index.html"><img src="image/logo.png" width="180px" alt=""></a>
+                    <img src="image/logo.png" width="180px" alt="">
                 </div>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="fees-page.html">Fees</a></li>
-                    <li><a href="faq.html">FAQs</a></li> 
+                    <li><a href="">Men's</a></li>
+                    <li><a href="">Women's</a></li>
+                    <li><a href="">Kid's</a></li> 
                 </ul>
             </div>
         </nav>
@@ -37,49 +39,26 @@
             <img src="image/main-page/main-page-photo.jpg">
         </div>
 
-        <div class="main-page-section-browse">
-            <div class="wrapper-4">
-                <div class="browse-size">
-                    <div class="browse-grid">
-                        <div class="menu">
-                            <li><a href=""><span>Browse By Stores</span></a>
-                                <ul class="submenu">
-                                    <li><a href="">Browse Stores by Name</a>
-                                        <ul class="submenu2">
-                                            <li><a href="browse-store-alphabets.html">A - Z</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="">Browse Stores by Categories</a>
-                                        <ul class="submenu2">
-                                            <li><a href="browse-store-all.html">All</a></li>
-                                            <li><a href="browse-store-clothing.html">Clothings</a></li>
-                                            <li><a href="browse-store-shoes.html">Shoes</a></li>
-                                            <li><a href="browse-store-accessories.html">Accessories</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </div>
-                        <div class="menu">
-                            <li><a href=""><span>Browse By Products</span></a>
-                                <ul class="submenu">
-                                    <li><a href="">Browse Products by Categories</a>
-                                        <ul class="submenu2">
-                                            <li><a href="">All</a></li>
-                                            <li><a href="">Men's</a></li>
-                                            <li><a href="">Women's</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a href="">Browse Products by Created Time</a>
-                                        <ul class="submenu2">
-                                            <li><a href="">Newest First</a></li>
-                                            <li><a href="">Oldest First</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </div>
+        <div class="main-page-section-search">
+            <div class="wrapper">
+                <div class="search-grid">
+                    <div>
+                        <select name="" class="form-main-page form-size" id="">
+                            <option value="">Catergory</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="" class="form-main-page form-size" id="">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="" class="form-main-page form-size" id="">
+                            <option value="">Select</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="form-size form-main form-block">Search</button>
                     </div>
                 </div>
             </div>
@@ -87,6 +66,8 @@
     </div>
 
     <main>
+        
+        
 
         <div class="navigation-section">
             <div class="wrapper">
@@ -95,16 +76,16 @@
                     <div class="navigation-container-wrapper">
                         <div class="grid-container">
                             <div class="nav-icons-2">
-                                <a href="opening-hours.html"><ion-icon name="time-outline"></ion-icon></a>
-                                <div class="container"><li><a href="opening-hours.html">View our Opening Hours</a></li></div>
+                                <ion-icon name="time-outline"></ion-icon>
+                                <div class="container"><h3>View our Opening Hours</h3></div>
                             </div>
                             <div class="nav-icons-2">
-                                <a href=""><ion-icon name="pin-outline"></ion-icon></a>
-                                <div class="container"><li><a href="">Getting There</a></li></div>
+                                <ion-icon name="pin-outline"></ion-icon>
+                                <div class="container"><h3>Getting There</h3></div>
                             </div>
                             <div class="nav-icons-2">
-                                <a href=""><ion-icon name="map-outline"></ion-icon></a>
-                                <div class="container"><li><a href="">Centre Map</a></li></div>
+                                <ion-icon name="map-outline"></ion-icon>
+                                <div class="container"><h3>Centre Map</h3></div>
                             </div>
                         </div>
                     </div>    
@@ -119,22 +100,22 @@
                     <div class="brand-content-wrapper">
                         <div class="grid-container-2">
                             <div class="brand">
-                            <a href="store-detail-ck.html"><img src="image/brand/calvinklein_masterbrand_logo_cmyk_black1.jpeg"></a>
+                            <img src="image/brand/calvinklein_masterbrand_logo_cmyk_black1.jpeg">
                             </div>
                             <div class="brand">
-                                <a href="store-detail-coach.html"><img src="image/brand/coach.jpeg"></a>
+                                <img src="image/brand/coach.jpeg">
                             </div>
                             <div class="brand">
-                                <a href="store-detail-nike.html"><img src="image/brand/nike-logo.jpeg"></a>
+                                <img src="image/brand/nike-logo.jpeg">
                             </div>
                             <div class="brand">
-                                <a href="store-detail-nike.html"><img src="image/brand/yd-logo-600x6001.jpeg"></a>
+                                <img src="image/brand/peter-alexander.jpeg">
                             </div>
                             <div class="brand">
-                                <a href="store-detail-nike.html"><img src="image/brand/puma.jpeg"></a>
+                                <img src="image/brand/puma.jpeg">
                             </div>
                             <div class="brand">
-                                <a href="store-detail-nike.html"><img src="image/brand/tommy-hilfiger.jpeg"></a>
+                                <img src="image/brand/tommy-hilfiger.jpeg">
                             </div>
                         </div>
                     </div>
@@ -150,49 +131,51 @@
                     <div class="new-features-wrapper">
                         <div class="grid-container-3">
                             <div class="flyer">
-                                <a href="featured-news.html"><img src="image/flyer/pandora-rings.jpeg"></a>
+                                <img src="image/flyer/pandora-rings.jpeg">
                             </div>                        
                             <div class="flyer">
-                                <a href="featured-news.html"><img src="image/flyer/puma-shoes.jpeg"></a>
+                                <img src="image/flyer/puma-shoes.jpeg">
                             </div>  
                             <div class="flyer">
-                                <a href="featured-news.html"><img src="image/flyer/yd_20pct-off-full-price-jackets_9apr.jpeg"></a>
+                                <img src="image/flyer/vanh.png">
                             </div>  
                             <div class="flyer">
-                                <a href="featured-news.html"><img src="image/flyer/shoewarehouse.jpeg"></a>
+                                <img src="image/flyer/vh-clear.png">
                             </div>  
                         </div>
-                        <div class="flex-container">
-                            <div class="flyer-content">
-                                <h3>Exclusive Offer at Pandora</h3>
-                                <h4>Buy 2& Receive the 3rd Free.</h4>
-                            </div>
-                            <div class="flyer-content">
-                                <h3>Puma Online Easter Sale</h3>
-                                <h4>40% off Storewide & Online.</h4>
-                            </div>
-                            <div class="flyer-content">
-                                <h3>Jacket sales at Yd.</h3>
-                                <h4>20% off full price jackets.</h4>
-                            </div>
-                            <div class="flyer-content">
-                                <h3>Shoes Warehouse Offer</h3>
-                                <h4>Buy one, get 50% off seconds pair.</h4>
-                            </div>
+                    </div>
+                    <div class="grid-container-3">
+                        <div class="flyer-content">
+                            <h3>Exclusive Offer at Pandora</h3>
+                            <h4>Buy 2& Receive the 3rd Free.</h4>
+                            <p>1st-4th April 2021</p>
                         </div>
-
+                        <div class="flyer-content">
+                            <h3>Puma Online Outlet Easter Sale</h3>
+                            <h4>40% off Storewide& Online.</h4>
+                            <p>1st-11th April 2021</p>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Cleareance at Van Heusen</h3>
+                            <h4>Take a Further 30% Off.</h4>
+                            <p>1st-6th April 2021</p>
+                        </div>
+                        <div class="flyer-content">
+                            <h3>Autumn Knitwear at Van Heusen</h3>
+                            <h4>Enjoy 40% Off.</h4>
+                            <p>1st-13th April 2021</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
         <div class="new-stores-section">
             <div class="wrapper-3">
                 <div class="row">
                     <div class="column-4">
-                        <h2>Featured Stores</h2>
-                        <p>Coming soon!</p>
+                        <h2>What's New</h2>
+                        <p>Newly Store just reached!</p>
                     </div>
                     <div class="column-8">
                         <div class="slider">
@@ -205,16 +188,16 @@
                                 <!--radio buttons eng-->
                                 <!--radio images starts-->
                                 <div class="slide first">
-                                    <a href="store-detail-nike.html"><img src="image/new-brand/adidas.jpg" alt=""></a>
+                                    <img src="image/new-brand/adidas.jpg" alt="">
                                 </div>
                                 <div class="slide">
-                                    <a href="store-detail-nike.html""><img src="image/new-brand/H&M.jpg" alt=""></a>
+                                    <img src="image/new-brand/H&M.jpg" alt="">
                                 </div>
                                 <div class="slide">
-                                    <a href="store-detail-nike.html""><img src="image/new-brand/superdry-logo.jpeg" alt=""></a>
+                                    <img src="image/new-brand/superdry-logo.jpeg" alt="">
                                 </div>
                                 <div class="slide">
-                                    <a href="store-detail-nike.html""><img src="image/new-brand/fossil-500x500-2021.png" alt=""></a>
+                                    <img src="image/new-brand/fossil-500x500-2021.png" alt="">
                                 </div>
                                 <!--radio images end-->
                                 <!--automatic navigation start-->
@@ -237,137 +220,25 @@
                         </div>
                     </div>
                 </div>    
-            </div>
-        </div>        
+            </div>    
+        </div>
 
         <div class="new-product-section">
             <div class="wrapper">
                 <div class="section-header">
                     <h2><span class="text-main">New Arrivals</span></h2>
-                    <div class="new-product-section-wrapper">
-                        <div class="grid-container-4">
-                            <div class="new-product-content">
-                                <img src="image/new-Arrivals/916_kha_a0.jpg">
-                                <a href="product-detail.html">
-                                    <div class="overlay__img">
-                                        <div class="overlay_title">
-                                            <h4>Coach Wallet</h4>
-                                            <h5>3,500,000 VND</h5>
-                                            <div class="nav-icons-3">
-                                                <ion-icon name="cart-outline"></ion-icon>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new-product-content">
-                                <img src="image/new-Arrivals/air-classic99-cap-GMtvHk.jpg">
-                                <a href="product-detail.html">
-                                    <div class="overlay__img">
-                                        <div class="overlay_title">
-                                            <h4>Nike Classic99 Air cap</h4>
-                                            <h5>500,000 VND</h5>
-                                            <div class="nav-icons-3">
-                                                <ion-icon name="cart-outline"></ion-icon>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new-product-content">
-                                <img src="image/new-Arrivals/J1AS0351_111_FNT.jpg">
-                                <a href="product-detail.html">
-                                    <div class="overlay__img">
-                                        <div class="overlay_title">
-                                            <h4>Pandora Bracelet</h4>
-                                            <h5>10,500,000 VND</h5>
-                                            <div class="nav-icons-3">
-                                                <ion-icon name="cart-outline"></ion-icon>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new-product-content">
-                                <img src="image/new-Arrivals/RS-X-Arcade-Men's-Sneakers.jpg">
-                                <a href="product-detail.html"> 
-                                    <div class="overlay__img">
-                                        <div class="overlay_title">
-                                            <h4>Puma RS-X Arcade</h4>
-                                            <h5>2,600,000 VND</h5>
-                                            <div class="nav-icons-3">
-                                                <ion-icon name="cart-outline"></ion-icon>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>   
-                            </div>
-                            <div class="new-product-content">
-                                <img src="image/new-Arrivals/Speedcat-OG+-Sparco-Motorsport-Shoes.jpg">
-                                <a href="product-detail.html">
-                                    <div class="overlay__img">
-                                        <div class="overlay_title">
-                                            <h4>Puma Speedcat OG</h4>
-                                            <h5>2,000,000 VND</h5>
-                                            <div class="nav-icons-3">
-                                                <ion-icon name="cart-outline"></ion-icon>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="new-product-content">
-                                <img src="image/new-Arrivals/sportswear-worldwide-adjustable-cap-ctzKTf.jpg">
-                                <a href ="product-detail.html">
-                                    <div class="overlay__img">
-                                        <div class="overlay_title">
-                                            <h4>Nike Worldwide cap</h4>
-                                            <h5>700,000 VND</h5>
-                                            <div class="nav-icons-3">
-                                                <ion-icon name="cart-outline"></ion-icon>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+                </div>
+                <div class="grid-container-3">
+                        <h2>test</h2>
+                        <h2>test</h2>
+                        <h2>test</h2>
+                        <h2>test</h2>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="row">
-                <div class="column-4">
-                    <h4>Contact Information</h4> 
-                    <ul class="footer-container-links">
-                        <li>1702 Nguyễn Văn Linh, <br>Tân Hưng, Quận 7, Thành phố Hồ Chí Minh 700000 </li>
-                        <li>Telephone: <a href="https://www.rmit.edu.vn/contact-us">(+84) 28 3776 1369</a></li>
-                        <li>Email: <a href="https://www.rmit.edu.vn/contact-us">enquiries@rmit.edu.vn </a></li>
-                        <li>Working hours: Monday to Saturday from 8am to 5pm (GMT+7)</li>
-                    </ul>
-                    <div class="main-text">
-                        <p>
-                            <small class="block">&copy; Team Olaha 2021 | Privacy Policy</small> 
-                            <small class="block">Designed by <a href="https://github.com/Olaha-mall/Olaha-mall.github.io" target="_blank">https://github.com/Olaha-mall/Olaha-mall.github.io</a></small>
-                        </p>
-                    </div>
-                </div>
-                <div class="column-8">
-                    <div class="navbar">
-                        <h4>Quick Links</h4>
-                        <ul class="footer-container-links">
-                            <li><a href="contact-form.html">Contact Us</a></li>
-                            <li><a href="faq.html">Copyright</a></li>
-                            <li><a href="faq.html">Term of Service</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script type="text/javascript">
