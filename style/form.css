@@ -3,6 +3,48 @@
     box-sizing: border-box;
 }
 
+.contact-us h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.contact-us span {
+    border-bottom: 3px solid var(--primaryColor);
+    padding-bottom: 0.4rem;
+}
+
+.contact-us p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-us-wrapper {
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.clear_sep {
+    border: 1px solid #414141;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-hint {
+    font-size: 0.7rem;
+    color: red;
+}
+
+input.invalid {
+    border: 1px solid red;
+}
+
 input[type=text],input[type=email],input[type=number],input[type=password],input[type=tel],input[type=file],input[type=file],
 select,
 textarea {
@@ -11,6 +53,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    font-size: 0.8rem;
 }
 
 label {
@@ -18,32 +61,32 @@ label {
     display: inline-block;
 }
 
-input[type=submit] {
+button[type=submit] {
     background-color: #4CAF50;
-    color: white;
-    padding: 13px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-input[type=reset] {
-    background-color: red;
     color: white;
     padding: 13px 22px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
-    font-size: medium;
+    font-size: 1rem;
 }
 
-input[type=reset]:hover {
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+button[type=reset] {
+    background-color: red;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+button[type=reset]:hover {
     background-color: rgb(199, 28, 28);
 }
 
@@ -56,13 +99,13 @@ input[type=reset]:hover {
 .col-25 {
     float: left;
     width: 25%;
-    margin-top: 6px;
+    margin-top: 14px;
 }
 
 .col-75 {
     float: left;
     width: 75%;
-    margin-top: 6px;
+    margin-top: 12px;
 }
 
 .submit-button{
@@ -105,6 +148,34 @@ table {
     padding-left: 23rem;
 }
 
+.count-words p {
+    float: right;
+    margin-top: 0rem;
+    font-size: 0.8rem
+}
+
+.thank-you {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.thank-you h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.thank-you span {
+    border-bottom: 3px solid var(--primaryColor);
+    padding-bottom: 0.4rem;
+}
+
+.thank-you p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -130,3 +201,25 @@ table {
 .test{
     padding-left: 23rem;
 }
+
+/* log in page */
+
+.log-in {
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.log-in h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    
+}
+
+.log-in span {
+    border-bottom: 3px solid var(--primaryColor);
+    padding-bottom: 0.4rem;
+}
+
+.log-in-wrapper {
+    padding: 2.5rem;
+}
+

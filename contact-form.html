@@ -6,153 +6,185 @@
     <link rel="stylesheet" href="style/form.css" />
     <link rel="stylesheet" href="style/style.css" />
 </head>
-
-<header>
-    <nav>
-        <div class="top-header">
-            <small>Olaha<br>Mall</small>
-            <div class="nav-icons">
-                <a href="shopping-cart.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
-                <a href="log-in.html"><ion-icon name="person-outline"></ion-icon></a> 
-            </div>
-        </div>
-        <div class="bottom-header">
-            <div class="mall-brand">
-                <a href="index.html"><img src="image/logo.png" width="180px" alt=""></a>
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="fees-page.html">Fees</a></li>
-                <li><a href="faq.html">FAQs</a></li> 
-            </ul>
-        </div>
-    </nav>
-
-</header>
-
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <form action="/action_page.php">
-
-                <div class="row">
-                    <div class="col-25">
-                        <label><b>Contact purpose </b></label>
-                    </div>
-                    <div class="col-75">
-                        <select id="Store category" name="Store category">
-                            <option value=''>Please select</option>
-                            <option value='CP'>Complaint</option>
-                            <option value='FB'>Feedback</option>
-                            <option value='CT'>Contact for more information</option>
-                            <option value='AP'>Appoinment</option>
-                        </select>
-                    </div>
+    <header>
+        <nav>
+            <div class="top-header">
+                <small>Olaha<br>Mall</small>
+                <div class="nav-icons">
+                    <a href="shopping-cart.html"><ion-icon name="bag-handle-outline"></ion-icon></a>
+                    <a href="log-in.html"><ion-icon name="person-outline"></ion-icon></a> 
                 </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label><b>Name</b></label>
-                    </div>
-                    <div class="col-75">
-                        <input type='text' placeholder="text" name="Name" required />
-                    </div>
+            </div>
+            <div class="bottom-header">
+                <div class="mall-brand">
+                    <a href="index.html"><img src="image/logo.png" width="180px" alt=""></a>
                 </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label><b>Email</b></label>
-                    </div>
-                    <div class="col-75">
-                        <input type='email' placeholder="Email" name="Email" required />
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label><b>Phone number </b></label>
-                    </div>
-                    <div class="col-75">
-                        <input type='tel' placeholder="Phone number" name="Phone" required />
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label><b>Preferred contact method</b></label>
-                    </div>
-                    <div class="col-75" style="margin-top: 1rem">
-                        <input style="margin-left: 1rem" type='radio' name='method' value='Email' />Email
-                        <input style="margin-left: 1.5rem" type='radio' name='method' value='Phone' />Phone
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label><b>Contact days</b></label>
-                    </div>
-                    <div class="col-75" >
-                        <input style="margin-left: 1rem" type='checkbox' name='seeks[]' value='Monday' />Monday
-                        <input style="margin-left: 0.5rem" type='checkbox' name='seeks[]' value='Tuesday' />Tuesday
-                        <input style="margin-left: 0.5rem" type='checkbox' name='seeks[]' value='Wendnesday' />Wendnesday
-                        <input style="margin-left: 0.5rem" type='checkbox' name='seeks[]' value='Thursday' />Thursday
-                        <input style="margin-left: 0.5rem" type='checkbox' name='seeks[]' value='Friday' />Friday
-                        <input style="margin-left: 0.5rem" type='checkbox' name='seeks[]' value='Saturday' />Saturday
-                        <input style="margin-left: 0.5rem" type='checkbox' name='seeks[]' value='Sunday' />Sunday
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-25">
-                        <label for="subject"><b>Message</b></label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Write something.."
-                            style="height:150px"></textarea>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Clear">
-                </div>
-            </form>
-        </div>
-    </div>
-
-</body>
-<footer>
-    <div class="footer-container">
-        <div class="row">
-            <div class="column-4">
-                <h4>Contact Information</h4> 
-                <ul class="footer-container-links">
-                    <li>1702 Nguyễn Văn Linh, <br>Tân Hưng, Quận 7, Thành phố Hồ Chí Minh 700000 </li>
-                    <li>Telephone: <a href="https://www.rmit.edu.vn/contact-us">(+84) 28 3776 1369</a></li>
-			        <li>Email: <a href="https://www.rmit.edu.vn/contact-us">enquiries@rmit.edu.vn </a></li>
-				    <li>Working hours: Monday to Saturday from 8am to 5pm (GMT+7)</li>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="fees-page.html">Fees</a></li>
+                    <li><a href="faq.html">FAQs</a></li> 
                 </ul>
-                <div class="main-text">
-                    <p>
-                        <small class="block">&copy; Team Olaha 2021 | Privacy Policy</small> 
-                        <small class="block">Designed by <a href="https://github.com/Olaha-mall/Olaha-mall.github.io" target="_blank">https://github.com/Olaha-mall/Olaha-mall.github.io</a></small>
-                    </p>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <div class="contact-us">
+                    <h2><span class="text-main">Contact Us</span></h2>
+                    <p>We'd love to hear your from you.</p>
+                        <div class="contact-us-wrapper">
+                            <form id="form">
+                                <div class="contact-form">
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label><b>Contact purpose </b></label>
+                                        </div>
+                                        <div class="col-75">
+                                            <select id="Store category" name="contactpurposes">
+                                                <option value=''>Please select</option>
+                                                <option value='CP'>Complaint</option>
+                                                <option value='FB'>Feedback</option>
+                                                <option value='CT'>Contact for more information</option>
+                                                <option value='AP'>Appoinment</option>
+                                            </select>
+                                            <div class="error-hint hidden">*At least one option is required.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label><b>Name</b></label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input class="" type='text' placeholder="Please enter your name" name="name"/>
+                                            <div class="error-hint hidden">*Name is required/Invalid. At least three letters.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label><b>Email</b></label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input class="" type='email' placeholder="Your email Address" name="email"/>
+                                            <div class="error-hint hidden">*Email is required/Invalid.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label><b>Phone</b></label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input class="" type='text' placeholder="Your Phone number" name="phone"/>
+                                            <div class="error-hint hidden">*Number is required/Invalid.</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label><b>Preferred contact method</b></label>
+                                        </div>
+                                        <div class="col-75">
+                                            <select id="contactmethod" name="contactmethod">
+                                                <option value=''>Please select</option>
+                                                <option value='Phone'>Phone</option>
+                                                <option value='Email'>Email</option>
+                                            </select>
+                                            <div class="error-hint hidden">*At least one option is required.</div>
+                                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label><b>Contact days</b></label>
+                                        </div>
+                                        <div class="col-75">
+                                            <select id="contactday" name="contactday">
+                                                <option value=''>Please select</option>
+                                                <option value='Monday'>Monday</option>
+                                                <option value='Tuesday'>Tuesday</option>
+                                                <option value='Wendnesday'>Wendnesday</option>
+                                                <option value='Thursday'>Thursday</option>
+                                                <option value='Friday'>Friday</option>
+                                                <option value='Saturday'>Saturday</option>
+                                                <option value='Sunday'>Sunday</option>
+                                            </select>
+                                            <div class="error-hint hidden">*At least one option is required.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="subject"><b>Message</b></label>
+                                        </div>
+                                        <div class="col-75">
+                                            <textarea id="messages" name="messages" placeholder="Write something.." style="height:150px" onkeyup="countWords(this);"></textarea>
+                                            <div class="error-hint hidden">*At least 50 words.</div>
+                                            <div class="count-words">
+                                                <p id="count-words"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        
+                                   
+                                    <div class="clear_sep"></div>
+                                    <div class="row">
+                                        <button class="disabled-pointer-events" id="submit-button" type="submit">Send</button>
+                                        <button type="reset" onclick="resetform()">reset</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="column-8">
-                <div class="navbar">
-                    <h4>Quick Links</h4>
+            <div class="thank-you hidden">
+                <h2><span class="text-main">Thank you for your Feedback!</h2></span>
+                <p>We will get in touch with you soon.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="row">
+                <div class="column-4">
+                    <h4>Contact Information</h4> 
                     <ul class="footer-container-links">
-                        <li><a href="contact-form.html">Contact Us</a></li>
-                        <li><a href="faq.html">Copyright</a></li>
-                        <li><a href="faq.html">Term of Service</a></li>
+                        <li>1702 Nguyễn Văn Linh, <br>Tân Hưng, Quận 7, Thành phố Hồ Chí Minh 700000 </li>
+                        <li>Telephone: <a href="https://www.rmit.edu.vn/contact-us">(+84) 28 3776 1369</a></li>
+                        <li>Email: <a href="https://www.rmit.edu.vn/contact-us">enquiries@rmit.edu.vn </a></li>
+                        <li>Working hours: Monday to Saturday from 8am to 5pm (GMT+7)</li>
                     </ul>
+                    <div class="main-text">
+                        <p>
+                            <small class="block">&copy; Team Olaha 2021 | Privacy Policy</small> 
+                            <small class="block">Designed by <a href="https://github.com/Olaha-mall/Olaha-mall.github.io" target="_blank">https://github.com/Olaha-mall/Olaha-mall.github.io</a></small>
+                        </p>
+                    </div>
+                </div>
+                <div class="column-8">
+                    <div class="navbar">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-container-links">
+                            <li><a href="contact-form.html">Contact Us</a></li>
+                            <li><a href="faq.html">Copyright</a></li>
+                            <li><a href="faq.html">Term of Service</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
     </footer>
+</body>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="js/form.js"></script>
 </html>
