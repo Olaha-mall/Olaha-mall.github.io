@@ -76,6 +76,21 @@ button[type=submit]:hover {
     background-color: #45a049;
 }
 
+button[type=button] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 1rem;
+}
+
+button[type=button]:hover {
+    background-color: #45a049;
+}
+
 button[type=reset] {
     background-color: red;
     color: white;
@@ -108,6 +123,7 @@ button[type=reset]:hover {
     margin-top: 12px;
 }
 
+
 .submit-button{
     background-color: #4CAF50;
     color: white;
@@ -136,13 +152,13 @@ button[type=reset]:hover {
 
 table {
     border-collapse: collapse;
-    width: 80%;
+    width: 95%;
   }
   
   td, th {
     border: 2px solid rgb(136, 131, 131);
     text-align: left;
-    padding: 8px;
+    padding: 10px;
   }
   .test{
     padding-left: 23rem;
@@ -198,9 +214,21 @@ table {
     }     
 
 }
-.test{
-    padding-left: 23rem;
+
+/* register page */
+.password-message {
+    position: relative;
 }
+
+.password-message i {
+    right: 10px;
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    line-height: 42px;
+    text-indent: 106px;
+}
+
 
 /* log in page */
 
@@ -221,5 +249,31 @@ table {
 
 .log-in-wrapper {
     padding: 2.5rem;
+}
+
+/* My Account */
+
+.account-detail {
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+.account-detail h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    
+}
+
+.account-detail span {
+    border-bottom: 3px solid var(--primaryColor);
+    padding-bottom: 0.4rem;
+}
+
+.account-detail-wrapper {
+    padding: 2rem;
+}
+
+.account-detail img {
+    margin-top: -12px;
+    width: 140px;
 }
 

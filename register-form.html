@@ -76,8 +76,10 @@
                                                 <label><b>confirm password</b></label>
                                             </div>
                                             <div class="col-75">
-                                                <input class="" type="password" placeholder="Re-enter Password" id="confirm_password" name="confirm_password" onkeyup='checkPassword();'/> 
-                                                <div class="error-hint hidden">*Not matching</div>
+                                                <div class="password-message"><i id="message"></i></div>
+                                                <input class="" type="password" placeholder="Re-enter Password" id="confirm_password" name="confirm_password" onkeyup="checkPassword();"/> 
+                                                <div class="error-hint hidden">*Required</div>
+                                               
                                             </div>
                                         </div>
                                         
@@ -182,6 +184,7 @@
                                                     <option value='customer' >Shopper</option>
                                                     <option value='owner' >Store owner</option>
                                                 </select>
+                                                <div class="error-hint hidden">*At least one option is required.</div>
                                             </div>
                                         </div>
                                         <div class="ownerdetail hidden">
@@ -247,28 +250,6 @@
         </div>
     </main>
 
-    <!-- <div class="container">
-        <div class="wrapper">
-            <form id="form">
-               
-
-
-
-                <label class="test">
-                    <h4>The following 3 fields only apply to a store owner account:</h4>
-                </label>
-
-
-                
-
-                <div class="row">
-                    <input type="submit" value="Register">
-                    <input type="reset" value="Clear">
-                </div>
-
-            </form>
-        </div>
-    </div> -->
     <footer>
         <div class="footer-container">
             <div class="row">

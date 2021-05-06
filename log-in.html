@@ -38,14 +38,14 @@
             <div class="log-in">
                 <h2><span class="text-main">Log in</span></h2>
                 <div class="log-in-wrapper">
-                    <form id="form">
+                    <form id="form" action="my-account.html">
                         <div class="row">
                             <div class="col-25">
                                 <label><b>Email/Phone number </b></label>
                             </div>
                             <div class="col-75">
-                                <input type='email' type="tel" placeholder="Email or Phone number" name="Email or Phone number"
-                                    value='minhh071202@gmail.com' required />
+                                <input class="" type='email' type="tel" id="username" placeholder="Email or Phone number" name="username"/>
+                                
                             </div>
                         </div>
                         <div class="row">
@@ -53,7 +53,8 @@
                                 <label><b>Password</b></label>
                             </div>
                             <div class="col-75">
-                                <input type='password' placeholder="Password" name="Password" value="Tintin2002" required />
+                                <input class="" type='password' id="password" placeholder="Password" name="password"/>
+                            
                             </div>
                             <div class="small-button">
                                 <ul>
@@ -65,7 +66,7 @@
                         
                         <div class="clear_sep"></div>
                         <div class="row">
-                            <button id="submit-button" type="submit">Log in</button>
+                            <button id="" type="button" onclick="LogIn_Verify();">Log in</button>
                             <button type="reset" onclick="resetform()">reset</button>
                         </div>
                     </form>
@@ -109,5 +110,5 @@
 
 </footer>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-
+<script src="js/log-in.js"></script>
 </html>

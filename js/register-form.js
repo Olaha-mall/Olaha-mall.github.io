@@ -11,6 +11,7 @@ const addressInput = document.querySelector('input[name="address"]');
 const cityInput = document.querySelector('input[name="city"]');
 const zipcodeInput = document.querySelector('input[name="zipcode"]');
 const countryInput = document.querySelector('select[name="country"]');
+const accountInput = document.querySelector('select[name="AccountType"]');
 
 
 // Email validation Regex //
@@ -35,6 +36,12 @@ const isValidPassword = (password) => {
 const isValidName = (name) => {
     const re = /^[a-zA-Z]{3,}$/;
     return re.test(String(name).toLocaleLowerCase());
+}
+
+// City validation Regex //
+const isValidCity = (city) => {
+    const re = /^(\b\S+\b\s?){3,}$/;
+    return re.test(String(city).toLocaleLowerCase());
 }
 
 // Address validattion Regex //
@@ -62,6 +69,7 @@ const inputs = [
     cityInput,
     zipcodeInput,
     countryInput,
+    accountInput
 ]
 
 // Boolean // 
@@ -93,6 +101,7 @@ const validateInputs = () => {
     resetElm(cityInput);
     resetElm(zipcodeInput);
     resetElm(countryInput);
+    resetElm(accountInput);
 
     // Email validate input // 
     if(!isValidEmail(emailInput.value)) {
@@ -111,7 +120,7 @@ const validateInputs = () => {
         isFormValid = false;
         invalidateElm(passwordInput);
     }
-    if(!confirmPasswordInput.value) {
+    if(!isValidPassword(confirmPasswordInput.value)) {
         isFormValid = false;
         invalidateElm(confirmPasswordInput);
     }
@@ -131,7 +140,7 @@ const validateInputs = () => {
         isFormValid = false;
         invalidateElm(addressInput);
     }
-    if(!isValidName(cityInput.value)) {
+    if(!isValidCity(cityInput.value)) {
         isFormValid = false;
         invalidateElm(cityInput);
     }
@@ -142,13 +151,29 @@ const validateInputs = () => {
         invalidateElm(zipcodeInput);
     }
 
-    // country validate input//
+    // country validate input //
     if(!countryInput.value) {
         isFormValid = false;
         invalidateElm(countryInput);
     }
+
+    // Account validate input //
+    if(!accountInput.value) {
+        isFormValid = false;
+        invalidateElm(accountInput);
+    }
 }
 
+// Password cofirmation //
+const checkPassword = function() {
+    if (passwordInput.value == confirmPasswordInput.value) {
+      document.getElementById('message').style.color = 'green';
+      document.getElementById('message').innerHTML = '✔ matching';
+    } else {
+      document.getElementById('message').style.color = 'red';
+      document.getElementById('message').innerHTML = '✖ not match';
+    }
+}
 
 
 form.addEventListener('submit', (e) => {
@@ -168,18 +193,18 @@ inputs.forEach((input) => {
     });
 });
 
+
+
 // Account type validate form dropdown //
-const accountType = document.querySelector('select[input="AccountType"]');
+const accountType = document.querySelector('select[name="AccountType"]')
 const ownerDetail = document.querySelector('.ownerdetail');
 
 const expandFormDetail = function () {
-    if (accountType.value == owner) {
+    if (accountType.value == "owner") {
         ownerDetail.classList.remove("hidden")
     }
     else {
         ownerDetail.classList.add("hidden")
     }
-    console.log(accountType);
 }
-
 accountType.addEventListener("change", expandFormDetail);
