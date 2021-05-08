@@ -15,3 +15,21 @@ https://github.com/Olaha-mall/Olaha-mall.github.io
 
 Host URL:
 https://olaha-mall.github.io/
+
+For our product page theres 2 pages name :
+
+1. 
+https://olaha-mall.github.io/nike-product-detail.html
+
+2.
+https://olaha-mall.github.io/aldo-product-detail.html
+
+Our hardcoded Account for Log-in page :
+
+1.
+Username: Sam123@gmail.com
+Password: 123123Abc!
+
+2.
+username: "0123456789@gmail.com"
+password: "1234567890Abc!"
