@@ -59,7 +59,7 @@ cell11.innerHTML = `<td><img src=${a[0].img} width="180px" alt=""></td>`;
 cell12.innerHTML = `<td class="special-product">${a[0].product}</td>`;
 cell13.innerHTML = `<td class="cart-price">${a[0].price}₫</td>`
 cell14.innerHTML = `<td><input class="cart-quantity" type="number" value="${a[0].quantity}" min="1" ></td>`
-cell15.innerHTML = `<td><button class="remove-button" type="button" onclick="removeproduct2();>Remove</button></td>`
+cell15.innerHTML = `<td><button class="remove-button" type="button" onclick="removeproduct2();">Remove</button></td>`
 
 document.getElementById("1").addEventListener("click", () => {
     document.getElementById().innerHTML =
@@ -100,7 +100,7 @@ function addToCart2(img, product, price, quantity) {
     }
 }
 
-function updateCartTotal(){
+function updateCartTotal() {
     for (let i = 0; i < localStorage.length; i++) {       
         let key = localStorage.key(i);
         console.log(localStorage.getItem(key));
@@ -131,7 +131,8 @@ function updateCartTotal(){
             total = total + price1 * quantity1 + price2 * quantity2
             console.log(total)
         }
+        document.getElementById('cart-total-price').innerHTML= total + " ₫"
     }  
-    document.getElementsByClassName('cart-total-price')[0].innerHTML= updateCartTotal.total
+    
 }
 

@@ -933,6 +933,7 @@ nav li a:hover {
     align-items: center;
     padding: 1rem;
     box-sizing: border-box;
+    height: 110px;
 }
 
 .thumbnail-slider .controls{
