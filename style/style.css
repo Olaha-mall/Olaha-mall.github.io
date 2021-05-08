@@ -44,7 +44,12 @@
 .nav-icons a {
     color: #fff;
 }
-
+.nav-icons button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+}
 .nav-icons-2 ion-icon {
     font-size: 4rem;
 }
@@ -826,7 +831,7 @@ nav li a:hover {
 /*NEW PRODUCTS SECTION START*/
 
 .new-product-section {
-    padding: 2rem;
+    padding: 2.5rem;
     background-color: #fff;
 }
 

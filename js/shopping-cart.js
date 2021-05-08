@@ -1,4 +1,22 @@
+// alert user product added to shopping cart //
 
+function alertUserShoppingCart () {
+    alert("Product has been Added to shopping cart!")
+    window.location.href = "shopping-cart.html"
+}
+
+// remove button //
+function removeproduct1 () {
+    localStorage.removeItem('item1');
+    window.location.href = "shopping-cart.html";
+}
+
+function removeproduct2 () {
+    localStorage.removeItem('Item2');
+    window.location.href = "shopping-cart.html";
+}
+
+// Save product to localStorage //
 let x = JSON.parse(localStorage.getItem("item1"));
 let a = JSON.parse(localStorage.getItem("item2"));
 
@@ -35,13 +53,13 @@ cell6.innerHTML = `<td><img src=${x[0].img} width="180px" alt=""></td>`;
 cell7.innerHTML = `<td class="special-product">${x[0].product}</td>`;
 cell8.innerHTML = `<td class="cart-price">${x[0].price}₫</td>`
 cell9.innerHTML = `<td><input class="cart-quantity" type="number" value="${x[0].quantity}" min="1" ></td>`
-cell10.innerHTML = `<td><button class="remove-button" type="button">Remove</button></td>`
+cell10.innerHTML = `<td><button class="remove-button" type="button" onclick="removeproduct1();">Remove</button></td>`
 
 cell11.innerHTML = `<td><img src=${a[0].img} width="180px" alt=""></td>`;
 cell12.innerHTML = `<td class="special-product">${a[0].product}</td>`;
 cell13.innerHTML = `<td class="cart-price">${a[0].price}₫</td>`
 cell14.innerHTML = `<td><input class="cart-quantity" type="number" value="${a[0].quantity}" min="1" ></td>`
-cell15.innerHTML = `<td><button class="remove-button" type="button">Remove</button></td>`
+cell15.innerHTML = `<td><button class="remove-button" type="button" onclick="removeproduct2();>Remove</button></td>`
 
 document.getElementById("1").addEventListener("click", () => {
     document.getElementById().innerHTML =
@@ -114,5 +132,6 @@ function updateCartTotal(){
             console.log(total)
         }
     }  
-    document.getElementsByClassName('cart-total-price')[0].innerHTML= total
+    document.getElementsByClassName('cart-total-price')[0].innerHTML= updateCartTotal.total
 }
+

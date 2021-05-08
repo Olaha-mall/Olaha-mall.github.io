@@ -1,4 +1,3 @@
-const form = document.querySelector('form');
 // hardcoded account info //
 var objAccount = [
     {// Object 0 index Email // 
@@ -18,7 +17,6 @@ const LogIn_Verify = function () {
 		// Account validate input //
 		if(emailInput == objAccount[i].username && passwordInput == objAccount[i].password) {
 			alert("Log In Successful!!")
-			form.remove();
             window.location.href = "my-account.html";
             return
 		}
@@ -26,3 +24,22 @@ const LogIn_Verify = function () {
 	alert("incorrect username or password")
 }
 
+// Store user login input into localStorage //
+let userInput = [];
+
+const userLoginData = (e) => {
+    e.preventDefault;
+    let userData = {
+        username : document.querySelector('input[name="username"]').value,
+        password : document.querySelector('input[name="password"]').value
+    }
+    userInput.push(userData);
+    console.log(userData);
+
+    // Save to localStorage //
+    localStorage.setItem('UserDataList', JSON.stringify(userInput));
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('log-in-btn').addEventListener('click', userLoginData)
+});

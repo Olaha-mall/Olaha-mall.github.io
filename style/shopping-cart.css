@@ -1,3 +1,13 @@
+.shopping-cart-section {
+    padding: 2.5rem;
+}
+
+.clear_sep {
+    border: 1px solid #414141;
+    margin-bottom: 1rem;
+}
+
+
 table {
     border-collapse: collapse;
     border-spacing: 0;

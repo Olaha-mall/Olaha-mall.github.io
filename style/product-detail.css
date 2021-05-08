@@ -71,7 +71,7 @@
         text-decoration: none;
         display: inline-block;
         font-size: 14px;
-        margin: 4px 2px;
+        margin: 4px 30px;
         margin-right: 430px;
         transition-duration: 0.4s;
         cursor: pointer;
@@ -86,6 +86,7 @@
     font-size: 36px;
     display: flex;
     margin-left: 2rem; 
+    cursor: pointer;
 }
        
 .icons ion-icon{
