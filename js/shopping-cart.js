@@ -5,16 +5,7 @@ function alertUserShoppingCart () {
     window.location.href = "shopping-cart.html"
 }
 
-// remove button //
-function removeproduct1 () {
-    localStorage.removeItem('item1');
-    window.location.href = "shopping-cart.html";
-}
 
-function removeproduct2 () {
-    localStorage.removeItem('Item2');
-    window.location.href = "shopping-cart.html";
-}
 
 // Save product to localStorage //
 let x = JSON.parse(localStorage.getItem("item1"));
@@ -131,8 +122,17 @@ function updateCartTotal() {
             total = total + price1 * quantity1 + price2 * quantity2
             console.log(total)
         }
-        document.getElementById('cart-total-price').innerHTML= total + " ₫"
     }  
-    
+    document.getElementById('cart-total-price').innerHTML= total + " ₫"
 }
 
+// remove button //
+function removeproduct1 () {
+    localStorage.removeItem('item1');
+    window.location.href = "shopping-cart.html";
+}
+
+function removeproduct2 () {
+    localStorage.removeItem('item2');
+    window.location.href = "shopping-cart.html";
+}
