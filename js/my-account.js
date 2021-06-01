@@ -1,7 +1,7 @@
 document.getElementById("my-account-btn").onclick = function () {
 
     if(localStorage.getItem('UserDataList') !== null) {
-        location.href = "my-account.html"
+        location.href = "my-account.php"
     }
     else{
         location.href = "log-in.html"

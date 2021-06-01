@@ -1,6 +1,5 @@
 // Input requirement register form //
 const form = document.querySelector('form');
-const thankyou = document.querySelector('.thank-you');
 const emailInput = document.querySelector('input[name="email"]');
 const phoneInput = document.querySelector('input[name="phone"]');
 const passwordInput = document.querySelector('input[name="password"]');
@@ -177,14 +176,16 @@ const checkPassword = function() {
 
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    isValidationOn = true;
-    validateInputs();
     if(isFormValid) {
-        form.remove();
-        thankyou.classList.remove("hidden");
+        return;
+    }
+    else {
+        e.preventDefault();
+        isValidationOn = true;
+        validateInputs();
     }
 });
+
 
 // Array input event listener //
 inputs.forEach((input) => {
@@ -208,3 +209,8 @@ const expandFormDetail = function () {
     }
 }
 accountType.addEventListener("change", expandFormDetail);
+
+function store () {
+    var email = document.querySelector('input')
+
+}

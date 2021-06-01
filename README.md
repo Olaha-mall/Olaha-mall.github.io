@@ -33,3 +33,12 @@ Password: 123123Abc!
 2.
 username: "0123456789@gmail.com"
 password: "1234567890Abc!"
+
+PHP assignment
+
+1.Due to some bug we couldn't find out the solution on debugging on password_verify() for admin CMS login. So we implement a hardcore account for CMS admin Log in username: admin ; password: test. 
+
+2.The rest of the install.php admin register account works find. The data file save outside of directory root folder.
+
+3.Register Form works fine somehow for both register and login. 
+

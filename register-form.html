@@ -26,7 +26,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">About Us</a></li>
                     <li><a href="fees-page.html">Fees</a></li>
-                    <li><a href="faq.html">FAQs</a></li> 
+                    <li><a href="faq.php">FAQs</a></li> 
                 </ul>
             </div>
         </nav>
@@ -39,7 +39,7 @@
                 <div class="contact-us">
                         <h2><span class="text-main">Register Form</span></h2>
                             <div class="contact-us-wrapper">
-                                <form id="form">
+                                <form id="form" action="php/register/register-input.php" method="POST">
                                     <div class="contact-form">
                                         <div class="row">
                                             <div class="col-25">
@@ -179,7 +179,7 @@
                                                 <label><b>Account type</b></label>
                                             </div>
                                             <div class="col-75">
-                                                <select name='AccountType' id="acctype">
+                                                <select name='AccountType' id="acctype" name="acctype">
                                                     <option value=''>Please Select</option>
                                                     <option value='customer' >Shopper</option>
                                                     <option value='owner' >Store owner</option>
@@ -232,20 +232,15 @@
                                         </div>
                                         <div class="clear_sep"></div>
                                         <div class="row">
-                                            <button class="disabled-pointer-events" id="submit-button" type="submit">Send</button>
+                                            <input class="disabled-pointer-events" name="submit-button" id="submit-button" type="submit"></input>
                                             <button type="reset" onclick="resetform()">reset</button>
                                         </div>
-
-                                        
                                     </div>
                                 </form>
                             </div>
                         </div>
+                    </div>
                 </div>
-            </div>
-            <div class="thank-you hidden">
-                <h2><span class="text-main">Thank you for your Feedback!</h2></span>
-                <p>We will get in touch with you soon.</p>
             </div>
         </div>
     </main>

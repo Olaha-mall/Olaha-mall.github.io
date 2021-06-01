@@ -1,28 +1,60 @@
-// hardcoded account info //
-var objAccount = [
-    {// Object 0 index Email // 
-        username: "Sam123@gmail.com",
-        password: "123123Abc!"
-    },
-    {// Object 1 index Phone // 
-        username: "0123456789@gmail.com",
-        password: "1234567890Abc!"
-    },
+const form = document.querySelector('form');
+const emailInput = document.querySelector('input[name="email"]');
+const passwordInput = document.querySelector('input[name="password"]');
+
+
+const inputs = [
+    emailInput,
+    passwordInput
 ]
 
-const LogIn_Verify = function () {
-    var emailInput = document.querySelector('input[name="username"]').value;
-    var passwordInput = document.querySelector('input[name="password"]').value;
-    for(var i = 0; i < objAccount.length; i++) {
-		// Account validate input //
-		if(emailInput == objAccount[i].username && passwordInput == objAccount[i].password) {
-			alert("Log In Successful!!")
-            window.location.href = "my-account.html";
-            return
-		}
-	}
-	alert("incorrect username or password")
+let LoginValid = false;
+let ValidationOn = false;
+
+const resetElm = (Elm) => {
+    Elm.classList.remove("invalid");
+    Elm.nextElementSibling.classList.add("hidden");
+};
+
+const invalidateElm = (Elm) => {
+    Elm.classList.add("invalid");
+    Elm.nextElementSibling.classList.remove("hidden");
+};
+
+const validateInputs = () => {
+    if(!ValidationOn) return;
+
+    LoginValid = true;
+    resetElm(emailInput);
+    resetElm(passwordInput);
+
+    if(!emailInput.value) {
+        LoginValid = false;
+        invalidateElm(emailInput);
+    }
+
+    if(!passwordInput.value) {
+        LoginValid = false;
+        invalidateElm(passwordInput);
+    }
 }
+
+form.addEventListener('click', (e) => {
+    if(LoginValid) {
+        return;
+    }
+    else {
+        e.preventDefault();
+        ValidationOn = true;
+        validateInputs();
+    }
+});
+
+inputs.forEach((input) => {
+    input.addEventListener("input", () => {
+    validateInputs();
+    });
+});
 
 // Store user login input into localStorage //
 let userInput = [];
@@ -30,7 +62,7 @@ let userInput = [];
 const userLoginData = (e) => {
     e.preventDefault;
     let userData = {
-        username : document.querySelector('input[name="username"]').value,
+        username : document.querySelector('input[name="email"]').value,
         password : document.querySelector('input[name="password"]').value
     }
     userInput.push(userData);

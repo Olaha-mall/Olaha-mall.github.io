@@ -18,6 +18,11 @@
     font-size: 1rem;
     text-align: center;
     margin-top: 1rem;
+    color: black;
+}
+
+a {
+    color: black;
 }
 
 .contact-us-wrapper {
@@ -88,6 +93,21 @@ button[type=button] {
 }
 
 button[type=button]:hover {
+    background-color: #45a049;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 1rem;
+}
+
+input[type=submit]:hover {
     background-color: #45a049;
 }
 
@@ -276,4 +296,3 @@ table {
     margin-top: -12px;
     width: 140px;
 }
-

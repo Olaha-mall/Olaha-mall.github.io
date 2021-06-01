@@ -25,7 +25,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="fees-page.html">Fees</a></li>
-                <li><a href="faq.html">FAQs</a></li> 
+                <li><a href="faq.php">FAQs</a></li> 
             </ul>
         </div>
     </nav>
@@ -38,14 +38,14 @@
             <div class="log-in">
                 <h2><span class="text-main">Log in</span></h2>
                 <div class="log-in-wrapper">
-                    <form id="form" action="my-account.html">
+                    <form id="form" action="php/register/log-in.php" method="POST">
                         <div class="row">
                             <div class="col-25">
                                 <label><b>Email/Phone number </b></label>
                             </div>
                             <div class="col-75">
-                                <input class="" type='email' type="tel" id="username" placeholder="Email or Phone number" name="username"/>
-                                
+                                <input class="" type='email' type="tel" id="username" placeholder="Email or Phone number" name="email"/>
+                                <div class="error-hint hidden">*Email is required/Invalid.</div>
                             </div>
                         </div>
                         <div class="row">
@@ -54,22 +54,22 @@
                             </div>
                             <div class="col-75">
                                 <input class="" type='password' id="password" placeholder="Password" name="password"/>
-                            
-                            </div>
-                            <div class="small-button">
-                                <ul>
-                                    <li><a href="forgot-password.html" class="small-button">Forgot Password</a><a
-                                            href="register-form.html" class="small-button">Register</a></li>
-                                </ul>
+                                <div class="error-hint hidden">*Password is required/Invalid.</div>
                             </div>
                         </div>
                         
                         <div class="clear_sep"></div>
                         <div class="row">
-                            <button id="log-in-btn" type="button" onclick="LogIn_Verify();">Log in</button>
+                            <button id="log-in-btn" name="log-in-btn" type="submit">Log in</button>
                             <button type="reset" onclick="resetform()">reset</button>
                         </div>
                     </form>
+                    <div class="small-button">
+                        <ul>
+                            <li><a href="forgot-password.html" class="small-button">Forgot Password</a>
+                                <a href="register-form.html" class="small-button">Register</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
